@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO On-Page y Favicon oficial -->
+  <title>StudyVoice | Lector de Texto a Voz y Resumidor Web a 0ms</title>
+  <meta name="description" content="Extensión gratuita para Chrome: Convierte texto web en audio con voz natural y resume al instante. Diseñado por TATSUBYTE JT para universitarios y TDAH.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Luces ambientales de fondo (0ms de carga, puro CSS) -->
+  <div class="bg-glow glow-top" aria-hidden="true"></div>
+  <div class="bg-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- BARRA DE NAVEGACIÓN CON IDENTIDAD DE MARCA -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <div class="brand">
+        <img src="icon.png" alt="Logo oficial de StudyVoice" class="brand-logo">
+        <span class="brand-name">Study<span class="text-gradient">Voice</span></span>
+      </div>
+      <span class="nav-tag">v1.1.0 Oficial</span>
+    </div>
+  </nav>
+
+  <!-- PANTALLA 1: HERO SECTION (Above the Fold) -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-logo-box">
+        <img src="icon.png" alt="Icono StudyVoice" class="hero-logo">
+      </div>
+      <span class="badge">🚀 Extensión 100% Gratuita para Google Chrome</span>
+      <h1>Lee apuntes infinitos <span class="text-gradient">sin quemarte los ojos</span> ni perder la concentración.</h1>
+      <h2>El primer reproductor bimodal y resumidor local a 0ms de latencia. Diseñado para universitarios y mentes con TDAH.</h2>
+
+      <!-- Formulario conectado a Google/Excel mediante FormSubmit y redirección automática -->
+      <form class="lead-form" action="https://formsubmit.co/TU_CORREO_AQUI@gmail.com" method="POST">
+        <!-- Oculta el captcha y fuerza la redirección a gracias.html -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="URL_DE_TU_WEB_EN_VERCEL/gracias.html">
+        
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Tu mejor correo electrónico..." required aria-label="Correo electrónico">
+          <button type="submit" class="cta-button">📩 Envíame el link de instalación a mi PC</button>
+        </div>
+        <label class="micro-copy">
+          <input type="checkbox" checked required>
+          <span>Prometo cero spam. Acceso directo y seguro a la Chrome Web Store.</span>
+        </label>
+      </form>
+    </div>
+  </header>
+
+  <!-- PANTALLA 2: SIMULADOR VISUAL Y FEATURES -->
+  <section class="features">
+    <div class="container">
+      
+      <!-- Maqueta visual atractiva que simula la extensión en vivo -->
+      <div class="demo-window" role="region" aria-label="Demostración visual de StudyVoice">
+        <div class="window-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="window-url">🔒 wikipedia.org/wiki/Neurociencia_cognitiva</span>
+        </div>
+        <div class="window-body">
+          <!-- Simulación de la barra real de StudyVoice -->
+          <div class="mock-widget">
+            <span class="mock-drag">⠿</span>
+            <span class="mock-btn">⏸ Pausa</span>
+            <span class="mock-btn">Resumir</span>
+            <span class="mock-btn">💾</span>
+            <span class="mock-select">Google Español ▾</span>
+            <span class="mock-select">1.5x ▾</span>
+            <span class="mock-close">✕</span>
+          </div>
+          <p class="mock-text">
+            <mark class="highlight">La atención sostenida y la comprensión lectora mejoran drásticamente cuando se combinan estímulos visuales y auditivos simultáneos,</mark> reduciendo la fatiga ocular frente a pantallas brillantes durante largas sesiones de estudio...
+          </p>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Beneficios con efecto Glassmorphism -->
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="card-icon">⚡</div>
+          <h3>0ms de Latencia</h3>
+          <p>Usa la red neuronal nativa de tu navegador. Reproducción instantánea sin tiempos de carga ni esperas.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="card-icon">🔒</div>
+          <h3>100% Privado y Seguro</h3>
+          <p>Algoritmo de ejecución local. Tus lecturas, resúmenes y apuntes jamás salen de tu ordenador.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="card-icon">💾</div>
+          <h3>Exportación Offline</h3>
+          <p>Extrae las ideas clave y descarga tus resúmenes limpios en formato .txt con un solo clic.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANTALLA 3: AUTORIDAD Y CIERRE (Código Cerrado) -->
+  <footer class="footer">
+    <div class="container">
+      <p class="mission">StudyVoice es un software gratuito de arquitectura propietaria (código cerrado) desarrollado para potenciar a la comunidad estudiantil.</p>
+      <p class="signature">Diseñado y programado por <strong>Jimmy Bustos (TATSUBYTE JT)</strong></p>
+      
+      <div class="social-links">
+        <a href="https://chromewebstore.google.com/search/StudyVoice" target="_blank" rel="noopener noreferrer" class="link-item" aria-label="Descargar StudyVoice en Chrome Web Store">
+          <span>🌐 Chrome Store: StudyVoice</span>
+        </a>
+        <a href="https://github.com/tatsubyte" target="_blank" rel="noopener noreferrer" class="link-item" aria-label="GitHub de Jimmy Bustos">
+          <span>🐙 GitHub: tatsubyte</span>
+        </a>
+        <a href="https://instagram.com/soy_jimmy.b" target="_blank" rel="noopener noreferrer" class="link-item" aria-label="Instagram de Jimmy Bustos">
+          <span>📸 Instagram: @soy_jimmy.b</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
